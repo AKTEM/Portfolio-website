@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 223 61% 29%;
+    --primary-light: 213 65% 48%;
+    --secondary: 94 41% 48%;
+    --accent: 39 77% 51%;
+    --creative: 291 67% 55%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 223 61% 29%;
+  }
+
+  .dark {
+    --primary: 213 65% 35%;
+    --primary-light: 213 65% 45%;
+    --secondary: 94 41% 48%;
+    --accent: 39 77% 51%;
+    --creative: 291 67% 55%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 213 65% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight leading-tight;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+.scrim-gradient {
+  background: linear-gradient(to bottom, transparent, hsl(var(--background)));
+}
+
+.tech-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  perspective: 1000px;
+  opacity: 0.15;
+}
+
+.tech-symbol {
+  position: absolute;
+  opacity: 0;
+  font-family: 'Fira Code', monospace;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation: float 15s ease-in-out infinite;
+  text-shadow: 0 0 15px currentColor;
+  font-weight: bold;
+}
+
+.tech-symbol::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: currentColor;
+  opacity: 0.05;
+  filter: blur(8px);
+  border-radius: 4px;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  45% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    transform: 
+      translate3d(var(--tx), var(--ty), var(--tz))
+      rotateX(var(--rx))
+      rotateY(var(--ry))
+      rotateZ(var(--rz));
+    opacity: 0;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
