@@ -60,7 +60,7 @@ const projects: Project[] = [
     imageUrl: '/img/big.jpeg',
     tags: ['Reactjs', 'Tailwind', 'API'],
     githubUrl: 'https://github.com/AKTEM/BigKokoWeb',
-    liveUrl: 'https://sds.bigkokogroup.com/',
+    liveUrl: 'https://bigkoko.vercel.app/',
   },
   {
     id: 6,
