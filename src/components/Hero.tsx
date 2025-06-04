@@ -98,9 +98,16 @@ const Hero: React.FC = () => {
             <Button size="lg">
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
-              Download Resume
+           <a 
+            href="https://drive.google.com/file/d/1JpLl3u-4_VgGUPQv512QxoyyRhMnwj4h/view?usp=drivesdk" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+           <Button variant="outline" size="lg">
+           Download Resume
             </Button>
+            </a>
+
           </div>
           
           <div className="mt-8 flex items-center space-x-6 animate-slide-up" style={{ animationDelay: '1600ms' }}>
