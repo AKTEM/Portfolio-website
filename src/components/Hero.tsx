@@ -95,18 +95,17 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '1400ms' }}>
-            <Button size="lg">
-              View My Work
-            </Button>
-           <a 
-            href="https://drive.google.com/file/d/1JpLl3u-4_VgGUPQv512QxoyyRhMnwj4h/view?usp=drivesdk" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            >
-           <Button variant="outline" size="lg">
-           Download Resume
-            </Button>
-            </a>
+            <a 
+           href="https://drive.google.com/file/d/1JpLl3u-4_VgGUPQv512QxoyyRhMnwj4h/view?usp=drivesdk" 
+           target="_blank" 
+           rel="noopener noreferrer">     
+
+          <div style={{ display: 'flex' }}>
+          <Button size="lg" style={{ width: '300px' }}>
+          Download Resume
+          </Button>
+          </div>
+          </a>
 
           </div>
           
