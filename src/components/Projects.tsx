@@ -39,10 +39,10 @@ const projects: Project[] = [
     id: 3,
     title: 'Tesak-D',
     description: 'A Landing Page Website for Tesak-D company',
-    imageUrl: '/img/tesak.jpeg',
+    imageUrl: '/img/cine.png',
     tags: ['Html', 'css', 'Javascript'],
-    githubUrl: 'https://github.com/AKTEM/Tesak-D',
-    liveUrl: 'https://tesak-d.netlify.app/',
+    githubUrl: 'https://github.com/AKTEM/Cineview',
+    liveUrl: 'https://cineview-theta.vercel.app/',
   },
   {
     id: 4,
@@ -176,9 +176,9 @@ const Projects: React.FC = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button>
+          {/* <Button>
             View All Projects
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

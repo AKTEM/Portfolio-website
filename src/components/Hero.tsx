@@ -91,12 +91,12 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="mt-6 text-lg text-foreground/80 max-w-2xl animate-slide-up" style={{ animationDelay: '1200ms' }}>
-            Crafting beautiful and accessible web experiences with modern technologies.
+           Crafting intuitive and performant front-ends that users love to engage with.
           </p>
           
           <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '1400ms' }}>
             <a 
-           href="https://drive.google.com/file/d/1JpLl3u-4_VgGUPQv512QxoyyRhMnwj4h/view?usp=drivesdk" 
+           href="https://drive.google.com/file/d/11IU2gUztqg0Cl31V-byHS-IiVpFFJ5jC/view?usp=drivesdk" 
            target="_blank" 
            rel="noopener noreferrer">     
 
@@ -111,21 +111,21 @@ const Hero: React.FC = () => {
           
           <div className="mt-8 flex items-center space-x-6 animate-slide-up" style={{ animationDelay: '1600ms' }}>
             <a
-              href="#"
+              href="https://github.com/AKTEM"
               className="text-foreground/70 hover:text-foreground transition-colors duration-200"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/emmanuel-akintola-68748b183/"
               className="text-foreground/70 hover:text-foreground transition-colors duration-200"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a
-              href="#"
+              href="https://x.com/gallancreative"
               className="text-foreground/70 hover:text-foreground transition-colors duration-200"
               aria-label="Twitter"
             >
