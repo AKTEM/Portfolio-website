@@ -37,8 +37,8 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Tesak-D',
-    description: 'A Landing Page Website for Tesak-D company',
+    title: 'Cineview',
+    description: 'Cineview Movie Web App',
     imageUrl: '/img/cine.png',
     tags: ['Html', 'css', 'Javascript'],
     githubUrl: 'https://github.com/AKTEM/Cineview',
