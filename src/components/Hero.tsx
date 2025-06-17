@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
           
           <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '1400ms' }}>
             <a 
-           href="https://drive.google.com/file/d/11IU2gUztqg0Cl31V-byHS-IiVpFFJ5jC/view?usp=drivesdk" 
+           href="https://drive.google.com/file/d/1C1g4xklqeCRJecQaVk36CgueiV4AMgR4/view?usp=drivesdk" 
            target="_blank" 
            rel="noopener noreferrer">     
 
