@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: 'agromyfoods',
-    description: 'A food item order and Delivery website',
+    description: 'A food item Ordering and Delivery website',
     imageUrl: '/img/agro.jpeg',
     tags: ['TypeScript', 'Nextjs', 'API', 'Tailwind','Framer motion','Firebase', 'Paystack'],
     githubUrl: 'https://github.com/AKTEM/Agromyfoodsweb',
