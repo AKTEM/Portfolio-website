@@ -70,6 +70,24 @@ const projects: Project[] = [
     tags: ['Wordpress'],
     githubUrl: '',
     liveUrl: 'https://clicksixtytechnologies.com/',
+  },  {
+    id: 7,
+    title: 'www.mapleepoch.com',
+    description: 'News/Article Platform',
+    imageUrl: '/img/Ma.png',
+    tags: ['Wordpress', 'Nextjs', 'Headless'],
+    githubUrl: 'https://github.com/AKTEM/maplesun7',
+    liveUrl: 'https://www.mapleepoch.com',
+  },
+  
+  {
+    id: 8,
+    title: 'copartagent.com',
+    description: 'Car Sales/Purchase Agency',
+    imageUrl: '/img/cop.png',
+    tags: ['Wordpress'],
+    githubUrl: '',
+    liveUrl: 'https://copartagent.com',
   },
 ];
 
