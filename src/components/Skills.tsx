@@ -13,10 +13,11 @@ interface SkillCategory {
 }
 
 const skillCategories: SkillCategory[] = [
-  {
+ {
     name: 'Frontend',
     skills: [
-      { name: 'React', level: 95, color: 'bg-primary-light' },
+      { name: 'React.js', level: 95, color: 'bg-primary-light' },
+      { name: 'Next.js', level: 95, color: 'bg-secondary' },
       { name: 'JavaScript', level: 95, color: 'bg-accent' },
       { name: 'TypeScript', level: 85, color: 'bg-primary' },
       { name: 'HTML/CSS', level: 90, color: 'bg-creative' },
@@ -26,8 +27,8 @@ const skillCategories: SkillCategory[] = [
   {
     name: 'Backend',
     skills: [
-      { name: 'Node.js', level: 85, color: 'bg-secondary' },
-      { name: 'Express', level: 80, color: 'bg-primary' },
+      { name: 'Node.js', level: 70, color: 'bg-secondary' },
+      { name: 'Express', level: 70, color: 'bg-primary' },
       { name: 'REST APIs', level: 90, color: 'bg-accent' },
     ],
   },
@@ -37,6 +38,7 @@ const skillCategories: SkillCategory[] = [
       { name: 'Git', level: 85, color: 'bg-accent' },
       { name: 'UI/UX Design', level: 80, color: 'bg-creative' },
       { name: 'Testing', level: 75, color: 'bg-secondary' },
+       { name: 'Wordpress', level: 70, color: 'bg-secondary' },
     ],
   },
 ];
