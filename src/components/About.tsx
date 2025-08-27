@@ -19,7 +19,7 @@ const About: React.FC = () => {
               </p>
               
               <p className="animate-fade-in" style={{ animationDelay: '100ms' }}>
-                I specialize in modern JavaScript library/frameworks like React, and have 
+                I specialize in modern JavaScript library/frameworks like React.js, Next.js and have 
                 extensive experience with Node.js, TypeScript, and various database 
                 technologies. I'm committed to writing clean, maintainable code and creating 
                 intuitive user experiences.
@@ -39,11 +39,10 @@ const About: React.FC = () => {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[
                     '3+ years professional experience',
-                    'Computer Science degree',
                     'Worked with 15+ clients',
                     'Delivered 20+ successful projects',
                     'Remote work experience',
-                    'Conference speaker',
+                    
                   ].map((fact, index) => (
                     <li
                       key={index}
